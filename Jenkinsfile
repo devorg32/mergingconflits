@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('check conflits') {
             steps {
-              sh label: '', script: '''git clone https://github.com/cjpcloud/warrepo.git 
+              sh label: '', script: '''git clone https://github.com/devorg32/mergingconflits.git 
 cd warrepo
 git checkout master
-git merge origin/conflicts
+git merge origin/conflicts1
 sh demo.sh'''
             }
         }
