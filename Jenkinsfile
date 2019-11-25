@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('check conflits') {
             steps {
-              sh label: '', script: '''git clone https://github.com/devorg32/mergingconflits.git
+              sh label: '', script: '''git status
               
 cd mergingconflits
 git checkout master
