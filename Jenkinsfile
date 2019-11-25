@@ -3,8 +3,13 @@ pipeline {
     stages {
         stage('check conflits') {
             steps {
+<<<<<<< HEAD
 
               sh label: '', script: '''git status
+=======
+              sh label: '', script: '''git status
+              
+>>>>>>> origin/conflicts1
 cd mergingconflits
 git checkout master
 git pull
