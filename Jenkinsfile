@@ -6,7 +6,7 @@ pipeline {
               sh label: '', script: '''git clone https://github.com/cjpcloud/warrepo.git 
 cd warrepo
 git checkout master
-git merge origin/mahesh 
+git merge origin/conflicts
 sh demo.sh'''
             }
         }
